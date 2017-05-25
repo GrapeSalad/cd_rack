@@ -45,7 +45,5 @@ namespace Organizer.Objects
    {
      _artists.Add(artist);
    }
-
   }
-
 }
