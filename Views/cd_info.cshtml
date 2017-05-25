@@ -1,3 +1,8 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+<div class="container">
+
 <h2>@Model["rack"].GetTitle() has these authors:</h2>
 <ul>
   @foreach (var artist in @Model["name"])
@@ -8,4 +13,5 @@
 
 <p><a href='/cd/@Model["rack"].GetId()/artist/add'>Add an artist to this CD</a></p>
 <p><a href="/cd/add">Add another CD</a></p>
-<p><a href="/">View all CD's</a></p>
+<p><a href="/cd">View all CD's</a></p>
+</div>

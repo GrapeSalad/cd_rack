@@ -10,7 +10,7 @@ namespace Organizer
     public HomeModule()
     {
       // Get["/"] = _ => View["index.cshtml"];
-      Get["/"] = _ => {
+      Get["/cd"] = _ => {
         List<Rack> fullRack = Rack.GetAll();
         return View["view_cd_titles.cshtml", fullRack];
       };
