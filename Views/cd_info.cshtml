@@ -1,0 +1,11 @@
+<h2>@Model["rack"].GetTitle() has these authors:</h2>
+<ul>
+  @foreach (var artist in @Model["name"])
+  {
+    <li>@artist.GetName()</li>
+  }
+</ul>
+
+<p><a href='/cd/@Model["rack"].GetId()/add_artist_form'>Add an artist to this CD</a></p>
+<p><a href="/add_cd">Add another CD</a></p>
+<p><a href="/cd">View all CD's</a></p>

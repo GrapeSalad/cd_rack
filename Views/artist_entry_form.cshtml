@@ -1,0 +1,8 @@
+<h2>Adding Artist to @Model["rack"].GetTitle()</h2>
+
+
+<form action="/add_artist_name" method="post">
+  <input id='rack-id' name='rack-id' type='hidden' value='@Model["rack"].GetId()'>
+  <label for="artist_name">Artist Name</label>
+  <input id="artist_name" type="text" name="artist_name">
+</form>
